@@ -1,12 +1,14 @@
-
+import React from 'react';
 import './App.css';
-import AddNewItem from './components/AddNewItem';
-import Review from './components/Review.jsx'
+import Preview from './components/Preview';
+
+// import Addnewitem from './components/Addnewitem';
+// import Review from './components/Review.jsx'
 
 function App() {
  return(
-  <Review/>
 
+<Preview/>
  )
  
 }
