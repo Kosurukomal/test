@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.container{
+    border:2px solid red;
+    height: 360px;
+    width:300px;
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+
+}
+.upper{
+    /* padding: 20px; */
+}
+.upper img{
+    /* margin-top: 30px; */
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.lower{
+    text-align: center;
+}

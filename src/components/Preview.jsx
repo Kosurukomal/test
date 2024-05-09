@@ -7,18 +7,21 @@ import "bootstrap/dist/css/bootstrap.css";
 function Preview() {
   const [show, setShow] = useState(false);
 const [formData,setFormData]=useState({
-    itemname:"Dolo256",
-    sku:"Dolo-2404",
-    description:"",
-    category:"A",
-    manufacturer:"sunpharma",
-    unitOfMeasure:10,
-    unitPrice:15,
-    initialQuantity:10,
-    reorderLevel:35,
-    suppliers:"",
-    expirationDate:"",
-    imageUpload:"",
+    itemname:"Bandages",
+    sku:"band-2603",
+    description:"NA",
+    category:"Medical supplies",
+    manufacturer:"chiler13",
+    unitOfMeasure:"Box",
+    unitPrice:546,
+    initialQuantity:787,
+    reorderLevel:52,
+    suppliers:[
+      "cipla pharmagaleria","pharma",
+      
+    ],
+    expirationDate:"2024-04-27",
+    imageUpload:"./beach.jpg",
 })
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -105,7 +108,7 @@ const handleFormSubmit=()=>{
     {/* Expiry Date */}
     <div className="row-flex col-6">
       <b className="w-50">ExpireDate</b>
-      <p>{formData.expirationDate || "NA"}</p>
+      <p>{formData.expirationDate}</p>
     </div>
 
     {/* Uploaded Image */}
